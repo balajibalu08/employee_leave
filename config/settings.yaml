@@ -17,6 +17,7 @@ Storage:
 validations:
   max_length_of_employee_id: 10
   min_length_of_employee_id: 9
+  min_length_of_employee_name: 1
   max_length_of_employee_name: 50
 CLI:
   title: "Leave_Tracker"
