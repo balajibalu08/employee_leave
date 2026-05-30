@@ -1,0 +1,24 @@
+app_name: "employee_leave"
+version: 0.1
+environment: "production"
+policy:
+  annual_leaves: 15
+  max_leave_request_a_day: 3
+  mininum_leave_request_a_day: 0.5
+  negitive_balence: False
+logging:
+  level: DEBUG
+  file: logs/app.log
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
+Storage:
+  employee_data: data/employee_data.json
+  leave_history: data/leave_history.json
+validations:
+  max_length_of_employee_id: 10
+  min_length_of_employee_id: 9
+  max_length_of_employee_name: 50
+CLI:
+  title: "Leave_Tracker"
+  exit_message: "Thank You! 😊"
+  date_format: "%Y-%m-%d"
