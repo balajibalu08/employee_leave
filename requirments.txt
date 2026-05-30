@@ -1,1 +1,3 @@
 google-yamlfmt
+pyyaml
+ruff
