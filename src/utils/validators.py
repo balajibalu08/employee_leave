@@ -61,6 +61,9 @@ def validate_employee_name(employee_name: str) -> bool:
 
 
 def validate_leave_days(leave_days: int) -> bool:
+    """
+    Validate leave days.
+    """
     if leave_days <= 0:
         logger.warning(f"leave Days {leave_days} Can't be 0 or less than Zero")
         return False
@@ -69,6 +72,9 @@ def validate_leave_days(leave_days: int) -> bool:
 
 
 def validate_leave_balance(requested_leave: int, available_leave: int) -> bool:
+    """
+    Validate leave balence.
+    """
     if not validate_leave_days(requested_leave):
         logger.warning(f"requested_leave {requested_leave} should be integer")
         return False
@@ -87,6 +93,9 @@ def validate_leave_balance(requested_leave: int, available_leave: int) -> bool:
 
 
 def employee_exists(employee_id: int, employees: list[dict]) -> bool:
+    """
+    checks employee exists or not.
+    """
     for emp in employees:
         if emp["employee_id"] == employee_id:
             logger.info(f"Employee {employee_id} exist.")
