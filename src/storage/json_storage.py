@@ -1,9 +1,11 @@
 import json
 from src.utils.logger import logger
-#Reads JSON
-def read_json(file_path:str)-> list[dict]:
+
+
+# Reads JSON
+def read_json(file_path: str) -> list[dict]:
     """
-        Read data from a JSON file.
+    Read data from a JSON file.
     """
     try:
         with open(file_path, "r", encoding="utf-8") as f:
@@ -22,24 +24,19 @@ def read_json(file_path:str)-> list[dict]:
         logger.exception(f"Unexpected error while reading {file_path}")
         raise
 
-#Write JSON
-def write_json(file_path:str, data:list[dict])-> None:
+
+# Write JSON
+def write_json(file_path: str, data: list[dict]) -> None:
     """
     Write data to a JSON file.
     """
     try:
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
-            logger.info(
-                f"Successfully wrote data to JSON file: {file_path}"
-            )
+            logger.info(f"Successfully wrote data to JSON file: {file_path}")
     except PermissionError:
-        logger.error(
-            f"Permission denied while writing to file: {file_path}"
-        )
+        logger.error(f"Permission denied while writing to file: {file_path}")
         raise
     except Exception:
-        logger.exception(
-            f"Unexpected error while writing to {file_path}"
-        )
+        logger.exception(f"Unexpected error while writing to {file_path}")
         raise
