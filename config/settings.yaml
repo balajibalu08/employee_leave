@@ -22,3 +22,5 @@ CLI:
   title: "Leave_Tracker"
   exit_message: "Thank You! 😊"
   date_format: "%Y-%m-%d"
+Testing:
+  file_path: tests
