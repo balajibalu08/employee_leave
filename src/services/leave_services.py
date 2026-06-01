@@ -23,7 +23,7 @@ def add_employee(employee_id: int, employee_name: str) -> bool:
         return False
     try:
         employees = read_json(config["Storage"]["employee_data"])
-        if employee_exists(employee_id=employee_id, employees=employees):
+        if employee_exists(employee_id=employee_id):
             return False
         employee = Employee(
             employee_id=employee_id,
@@ -54,7 +54,7 @@ def apply_leave(
     """
     try:
         employees = read_json(config["Storage"]["employee_data"])
-        if not employee_exists(employee_id, employees=employees):
+        if not employee_exists(employee_id):
             return False
         if not validate_leave_days(leave_days=leave_days):
             return False
@@ -96,7 +96,7 @@ def apply_leave(
 def view_balance(employee_id: int) -> int | None:
     try:
         employees = read_json(config["Storage"]["employee_data"])
-        if not employee_exists(employee_id=employee_id, employees=employees):
+        if not employee_exists(employee_id=employee_id):
             return None
 
         for emp in employees:
@@ -112,6 +112,9 @@ def view_balance(employee_id: int) -> int | None:
 
 def view_leave_history(employee_id: int) -> list[Leave]:
     try:
+        if not employee_exists(employee_id=employee_id):
+            logger.warning(f"No Such employee {employee_id} found")
+            return []
         leaves = read_json(config["Storage"]["leave_history"])
         employee_leaves = []
         for leave in leaves:
@@ -137,3 +140,16 @@ def list_employees() -> list[Employee]:
     except Exception:
         logger.exception("Failed to Retrieve list of  employees")
         raise
+
+
+def get_employee_id() -> int:
+    while True:
+        try:
+            employee_id = int(input("Enter Employee ID (9-10 digits):"))
+            if not validate_employee_id(employee_id):
+                print("Invalid Employee ID")
+                continue
+            return employee_id
+        except ValueError:
+            print("Please enter a valid number.")
+            logger.warning("User entered non-numeric Employee ID.")

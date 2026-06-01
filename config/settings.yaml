@@ -20,6 +20,7 @@ validations:
   min_length_of_employee_name: 1
   max_length_of_employee_name: 50
 CLI:
+  menu: "╔══════════════════════════════════════════════╗\n║        Leave Management Console v1.0         ║\n╠══════════════════════════════════════════════╣\n║  1. Register Employee                        ║\n║  2. Submit Leave Request                     ║\n║  3. Check Leave Balance                      ║\n║  4. View Leave History                       ║\n║  5. Display Employee Directory               ║\n║  6. Exit Application                         ║\n╚══════════════════════════════════════════════╝\n\nEnter Choice (1-6): \n"
   title: "Leave_Tracker"
   exit_message: "Thank You! 😊"
   date_format: "%Y-%m-%d"

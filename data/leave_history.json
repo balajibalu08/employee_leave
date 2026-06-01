@@ -1,0 +1,8 @@
+[
+    {
+        "employee_id": 123456890,
+        "leave_days": 3,
+        "reason": "fever",
+        "applied_date": "2026-06-02"
+    }
+]

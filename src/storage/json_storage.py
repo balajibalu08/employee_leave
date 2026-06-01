@@ -1,5 +1,5 @@
 import json
-from src.utils.logger import logger
+from utils.logger import logger
 
 
 # Reads JSON

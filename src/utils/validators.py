@@ -1,5 +1,6 @@
 from utils.config import config
 from utils.logger import logger
+from storage.json_storage import read_json
 
 
 def validate_employee_id(employee_id: int) -> bool:
@@ -92,10 +93,11 @@ def validate_leave_balance(requested_leave: int, available_leave: int) -> bool:
     return True
 
 
-def employee_exists(employee_id: int, employees: list[dict]) -> bool:
+def employee_exists(employee_id: int) -> bool:
     """
     checks employee exists or not.
     """
+    employees = read_json(config["Storage"]["employee_data"])
     for emp in employees:
         if emp["employee_id"] == employee_id:
             logger.info(f"Employee {employee_id} exist.")

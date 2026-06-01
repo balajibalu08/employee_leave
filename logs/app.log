@@ -1,0 +1,91 @@
+2026-06-01 06:58:16,551 | INFO     | utils.logger | User have selected 1 option.
+2026-06-01 06:58:30,375 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 06:58:42,338 | INFO     | utils.logger | Employee Name balaji tadisetty validation successful.
+2026-06-01 06:58:42,338 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 06:58:42,338 | INFO     | utils.logger | Employee Name balaji tadisetty validation successful.
+2026-06-01 06:58:42,339 | ERROR    | utils.logger | JSON file not found: data/employee_data.json
+2026-06-01 06:58:42,339 | ERROR    | utils.logger | Employee is not created with given bellow details 
+ Employee_id: 123456890 Employee_name : balaji tadisetty for given error : [Errno 2] No such file or directory: 'data/employee_data.json'
+2026-06-01 06:58:57,533 | INFO     | utils.logger | Application closed by user.
+2026-06-01 06:59:35,677 | INFO     | utils.logger | User have selected 1 option.
+2026-06-01 06:59:41,688 | WARNING  | utils.logger | Employee ID 12345689 must have at least 9 digits.
+2026-06-01 06:59:46,626 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 06:59:56,094 | INFO     | utils.logger | Employee Name balaji tadisetty validation successful.
+2026-06-01 06:59:56,095 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 06:59:56,095 | INFO     | utils.logger | Employee Name balaji tadisetty validation successful.
+2026-06-01 06:59:56,097 | ERROR    | utils.logger | Invalid JSON format in data/employee_data.json: Expecting value: line 1 column 1 (char 0)
+2026-06-01 06:59:56,097 | ERROR    | utils.logger | Employee is not created with given bellow details 
+ Employee_id: 123456890 Employee_name : balaji tadisetty for given error : Expecting value: line 1 column 1 (char 0)
+2026-06-01 07:01:29,748 | INFO     | utils.logger | User have selected 1 option.
+2026-06-01 07:01:33,771 | WARNING  | utils.logger | Employee ID 12345689 must have at least 9 digits.
+2026-06-01 07:01:37,994 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 07:01:39,349 | INFO     | utils.logger | Employee Name balaji tadisetty validation successful.
+2026-06-01 07:01:39,349 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 07:01:39,349 | INFO     | utils.logger | Employee Name balaji tadisetty validation successful.
+2026-06-01 07:01:39,350 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 07:01:39,350 | WARNING  | utils.logger | Employee 123456890 not exist.
+2026-06-01 07:01:39,351 | INFO     | utils.logger | Employee 123456890 is created Sucessfully with given bellow details 
+ Employee_id: 123456890 Employee_name : balaji tadisetty
+2026-06-01 07:01:39,351 | INFO     | utils.logger | Employee 123456890 added to Employee List
+2026-06-01 07:01:39,352 | INFO     | utils.logger | Successfully wrote data to JSON file: data/employee_data.json
+2026-06-01 07:01:39,352 | INFO     | utils.logger | Employees wrtien to json file
+2026-06-01 07:01:39,352 | INFO     | utils.logger | Employee 123456890 added successfully.
+2026-06-01 07:04:46,594 | INFO     | utils.logger | Application closed by user.
+2026-06-01 07:04:55,221 | INFO     | utils.logger | Application closed by user.
+2026-06-01 11:06:13,720 | INFO     | utils.logger | User have selected 3 option.
+2026-06-01 11:06:28,353 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 11:06:28,354 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:06:28,355 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:06:28,355 | INFO     | utils.logger | Employee 123456890 exist.
+2026-06-01 11:06:28,355 | INFO     | utils.logger | Employee 123456890 leave balance successfully retrieved.
+2026-06-01 11:06:28,355 | INFO     | utils.logger | User Entered Employee 123456890 not found
+2026-06-01 11:06:37,927 | INFO     | utils.logger | User have selected 4 option.
+2026-06-01 11:06:37,927 | INFO     | utils.logger | User Entered Invalid Choice 4
+2026-06-01 11:06:40,670 | INFO     | utils.logger | User have selected 4 option.
+2026-06-01 11:06:40,671 | INFO     | utils.logger | User Entered Invalid Choice 4
+2026-06-01 11:07:10,919 | INFO     | utils.logger | User have selected 4 option.
+2026-06-01 11:07:15,356 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 11:07:15,357 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:07:15,357 | INFO     | utils.logger | Employee 123456890 exist.
+2026-06-01 11:07:15,357 | INFO     | utils.logger | Successfully loaded JSON file: data/leave_history.json
+2026-06-01 11:07:15,357 | INFO     | utils.logger | Retrieved 0 leave records for employee_id=123456890
+2026-06-01 11:07:15,358 | WARNING  | utils.logger | No leave history found for employee 123456890
+2026-06-01 11:09:56,074 | INFO     | utils.logger | User entered a non-numeric menu choice.
+2026-06-01 11:10:05,108 | INFO     | utils.logger | User have selected 6 option.
+2026-06-01 11:10:05,108 | INFO     | utils.logger | Application closed by user.
+2026-06-01 11:10:14,403 | INFO     | utils.logger | User have selected 5 option.
+2026-06-01 11:10:14,403 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:10:14,404 | INFO     | utils.logger | Retrieved 1 Employee Records
+2026-06-01 11:10:21,191 | INFO     | utils.logger | User have selected 2 option.
+2026-06-01 11:10:27,622 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 11:10:30,024 | INFO     | utils.logger | leave Days 3 Validation sucessful.
+2026-06-01 11:10:51,753 | INFO     | utils.logger | User selected leave application for employee 123456890
+2026-06-01 11:10:51,754 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:10:51,754 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:10:51,754 | INFO     | utils.logger | Employee 123456890 exist.
+2026-06-01 11:10:51,754 | INFO     | utils.logger | leave Days 3 Validation sucessful.
+2026-06-01 11:10:51,754 | INFO     | utils.logger | Leave record created for employee_id : 123456890
+2026-06-01 11:10:51,754 | INFO     | utils.logger | Successfully loaded JSON file: data/leave_history.json
+2026-06-01 11:10:51,754 | INFO     | utils.logger | leave Days 3 Validation sucessful.
+2026-06-01 11:10:51,754 | INFO     | utils.logger | leave Days 15 Validation sucessful.
+2026-06-01 11:10:51,755 | INFO     | utils.logger | Validating requested_leave: 3 available_leave: 15 Leave balance is sucessfull.
+2026-06-01 11:10:51,755 | INFO     | utils.logger | Leave balance has been updated for employee_id: 123456890
+2026-06-01 11:10:51,755 | INFO     | utils.logger | Successfully wrote data to JSON file: data/employee_data.json
+2026-06-01 11:10:51,755 | INFO     | utils.logger | Employee Details Updated
+2026-06-01 11:10:51,755 | INFO     | utils.logger | Successfully wrote data to JSON file: data/leave_history.json
+2026-06-01 11:10:51,756 | INFO     | utils.logger | Leave History Updated
+2026-06-01 11:10:51,756 | INFO     | utils.logger | Employee 123456890 Leave request Raised Sucessfully.
+2026-06-01 11:11:00,204 | INFO     | utils.logger | User have selected 4 option.
+2026-06-01 11:11:03,263 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 11:11:03,282 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:11:03,282 | INFO     | utils.logger | Employee 123456890 exist.
+2026-06-01 11:11:03,296 | INFO     | utils.logger | Successfully loaded JSON file: data/leave_history.json
+2026-06-01 11:11:03,297 | INFO     | utils.logger | Retrieved 1 leave records for employee_id=123456890
+2026-06-01 11:11:03,297 | INFO     | utils.logger | Fetched Leave History of Employee 123456890
+2026-06-01 11:11:12,916 | INFO     | utils.logger | User have selected 3 option.
+2026-06-01 11:11:19,396 | INFO     | utils.logger | Employee ID 123456890 validation successful.
+2026-06-01 11:11:19,397 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:11:19,398 | INFO     | utils.logger | Successfully loaded JSON file: data/employee_data.json
+2026-06-01 11:11:19,398 | INFO     | utils.logger | Employee 123456890 exist.
+2026-06-01 11:11:19,398 | INFO     | utils.logger | Employee 123456890 leave balance successfully retrieved.
+2026-06-01 11:11:19,398 | INFO     | utils.logger | User Entered Employee 123456890 not found

@@ -1,4 +1,4 @@
-import config
+from utils.config import config
 import logging
 
 # Logging basic Configuration
@@ -7,3 +7,4 @@ logging.basicConfig(
     level=config["logging"]["level"],
     format=config["logging"]["format"],
 )
+logger = logging.getLogger(__name__)
